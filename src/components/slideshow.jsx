@@ -6,9 +6,9 @@ function SlideShow() {
 
     const slides = [
         {
-            image: "img",
+            image: "src/imgs/MovieZ.png",
             title: "Project MovieZ",
-            description: "This is my first awesome project",
+            description: "MovieZ er en film-database app til mobilen hvor du kan søge efter film, se trailers, ratings og beskrivelser. Bygget med React og TMDB API.",
             link: "https://projekt-moviez-silaswb.onrender.com/"
         },
         {
@@ -49,12 +49,15 @@ function SlideShow() {
                 <div className="imagewindow">
                     <div className="imageroll flex" ref={imageRollRef}>
                         {slides.map((slide, index) => (
-                            <div key={index} className="slide">
-                                <img src={slide.image} alt={slide.title} />
+                            <div key={index} > 
+                           
+                                <div className="slide">
+                           <img src={slide.image} alt={slide.title} />  
                                 <div className="slide-content">
                                     <h2>{slide.title}</h2>
                                     <p>{slide.description}</p>
                                 </div>
+                            </div>
                             </div>
                         ))}
                     </div>

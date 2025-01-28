@@ -12,10 +12,11 @@
 }
 
 .imagewindow {
-    width: 200px;
-    height: 100px;
+    width: 600px;
+    height: 375px;
     border: solid 1px black;
     overflow: hidden;
+  object-fit: cover;
 }
 
 .dots {
