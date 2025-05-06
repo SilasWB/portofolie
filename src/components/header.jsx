@@ -14,6 +14,13 @@ function Header() {
               <li><a href="#contact">Contact</a></li>          
               </ul>
       </nav>
+      <section>    
+        <h1>HEJ, JEG ER <span>SILAS BARROS LARSEN</span> </h1>
+      <p>Frontend-udvikler | Kreativ Problemlæser</p>
+
+      <button>KONTAKT MIG</button>
+      </section>
+  
      </header>
     </>
   )

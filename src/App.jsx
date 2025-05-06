@@ -1,16 +1,11 @@
 import { useRoutes } from "react-router-dom"
-import Portofolio from "./pages/portofolio"
-import Index from "./pages"
+import Index from "./pages/index"
 
 function App() {
   const routes = useRoutes([
     {
       path: "/",
       element: <Index />,
-    },
-    {
-      path: "/portofolio",
-      element: <Portofolio />,
     },
 
   ])
