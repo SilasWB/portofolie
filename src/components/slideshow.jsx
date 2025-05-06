@@ -1,25 +1,37 @@
 import { useState, useRef } from 'react';
 import '../style/slideshow.scss';
+import MovieZ from '../imgs/MovieZ.png';
+import Hifi from '../imgs/hifi.png';
+import Newsify from '../imgs/Newsify.png';
+import orange from '../imgs/orange.png';
+
 function SlideShow() {
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const imageRollRef = useRef(null);
 
     const slides = [
         {
-            image: "src/imgs/MovieZ.png",
+            image: MovieZ,
             title: "Project MovieZ",
             description: "MovieZ er en film-database app til mobilen hvor du kan søge efter film, se trailers, ratings og beskrivelser. Bygget med React og TMDB API.",
             link: "https://projekt-moviez-silaswb.onrender.com/"
         },
         {
-            image: "img",
-            title: "Project Two",
-            description: "Check out my second creation"
+            image: Hifi,
+            title: "Project Hifi",
+            description: "musikshop der sælger hifi-produkter. Bygget med HTML, CSS og JavaScript.",
         },
         {
-            image: "img",
-            title: "Project Three",
-            description: "The third project in my portfolio"
+            image: Newsify,
+            title: "Project Newsify",
+            description: "Newsify er en app til at finde musik, der passer til din musik smag. Bygget med React og Spotify API."
+        },
+        {
+            image: orange,
+            title: "Project ",
+            description: "MovieZ er en film-database app til mobilen hvor du kan søge efter film, se trailers, ratings og beskrivelser. Bygget med React og TMDB API.",
+            link: "https://projekt-moviez-silaswb.onrender.com/"
         }
     ];
 
@@ -44,20 +56,19 @@ function SlideShow() {
 
     return (
         <section className="slideshow">
+            <div className="slide-content">
+                <h2>{slides[currentIndex].title}</h2>
+                <p>{slides[currentIndex].description}</p>
+            </div>
             <div className="container flex">
                 <button className="prev" onClick={() => handleNavigation('prev')}>{'<'}</button>
                 <div className="imagewindow">
                     <div className="imageroll flex" ref={imageRollRef}>
                         {slides.map((slide, index) => (
                             <div key={index} > 
-                           
                                 <div className="slide">
-                           <img src={slide.image} alt={slide.title} />  
-                                <div className="slide-content">
-                                    <h2>{slide.title}</h2>
-                                    <p>{slide.description}</p>
+                                    <img src={slide.image} alt={slide.title} />  
                                 </div>
-                            </div>
                             </div>
                         ))}
                     </div>
