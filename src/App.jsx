@@ -3,7 +3,7 @@ import Index from "./pages/index"
 
 function App() {
   const routes = useRoutes([
-    {
+    {      
       path: "/",
       element: <Index />,
     },

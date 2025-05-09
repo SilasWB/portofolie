@@ -1,0 +1,13 @@
+.about {
+    background-color: #E0E0E0;
+    padding: 2rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+    &__image {
+background-color: black;
+width: 12.5rem;
+height: 12rem;
+border-radius: 100px;
+    }
+}

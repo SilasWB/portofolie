@@ -1,0 +1,64 @@
+.kompkontakt {
+    display: flex;
+  justify-content: space-around;
+    padding: 3rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 1280px;
+    margin: 2rem auto;
+  
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));      
+      gap: 1.5rem;
+      text-transform: uppercase;
+      padding: 0;
+      width: 100%;
+  
+      li {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        text-align: center;
+        border-radius: var(--radius);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        font-weight: 600;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-4px);
+          background-color: #e6f8f5;
+        }
+      }
+    }
+  
+    &__social {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      justify-content: center;
+  
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+  
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+  
+        &:hover {
+          background-color: var(--primary-dark);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  

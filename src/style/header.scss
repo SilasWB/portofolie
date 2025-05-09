@@ -1,8 +1,7 @@
 @use 'resets';
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #E0E0E0;
     padding: 1rem;
     width: 100%;
 
@@ -10,7 +9,7 @@ header {
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2.5rem;
         align-items: center;
 
         h1 {
@@ -19,18 +18,22 @@ header {
             flex-direction: column;
             font-size: 42px;
             align-items: center;
+            text-transform: uppercase;
         }
 
         button {
             padding: 1rem 1.25rem;
             background-color: #fff;
-            font-weight: 700;
+          text-transform: uppercase;
+          font-weight: 700;
+            
         }
     }
 
     nav {
         display: flex;
-     justify-content: space-around;
+        justify-content: space-around;
+
         ul {
             display: flex;
             gap: 1rem;
@@ -44,7 +47,7 @@ header {
 
                 &:hover {
                     transform: translateY(-3px);
-                    
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -55,18 +58,17 @@ header {
                         background: linear-gradient(90deg, white, black, white);
                         background-size: 200% 100%;
                         animation: glow 1s ease-in-out infinite alternate,
-                                 moveGradient 2s linear infinite;
+                            moveGradient 2s linear infinite;
                     }
                 }
 
                 a {
                     text-decoration: none;
                     padding: 0.5rem;
-                    color: #fff;
 
                     &[aria-current="page"] {
                         font-weight: bold;
-                        border-bottom: 2px solid #007bff;
+                        border-bottom: 2px solid black;
                     }
                 }
             }
@@ -78,6 +80,7 @@ header {
     0% {
         background-position: 200% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -87,6 +90,7 @@ header {
     from {
         box-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 15px #7e2dff;
     }
+
     to {
         box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #7e2dff;
     }

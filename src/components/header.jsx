@@ -15,11 +15,11 @@ function Header() {
               </ul>
       </nav>
       <section>    
-        <h1>HEJ, JEG ER <span>SILAS BARROS LARSEN</span> </h1>
-      <p>Frontend-udvikler | Kreativ Problemlæser</p>
+              <h1>Hej, jeg er <span>Silas Barros Larsen</span> </h1>
+            <p>Frontend-udvikler | Kreativ Problemlæser</p>
 
-      <button>KONTAKT MIG</button>
-      </section>
+            <button>Kontakt mig</button>      
+            </section>
   
      </header>
     </>

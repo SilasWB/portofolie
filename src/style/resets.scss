@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   img, picture, video, canvas, svg {
     display: block;
   width: 600px;
@@ -17,6 +17,12 @@
   
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+  }
+
+  h2 {
+    padding: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
   }
   
   a {
